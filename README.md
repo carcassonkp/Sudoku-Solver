@@ -6,3 +6,7 @@ again, this time finding the next empty cell and repeating the process until the
 valid option, a process known as backtracking.
 
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif" alt="animated" />
+</p>
