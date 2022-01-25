@@ -26,6 +26,7 @@ include the variables, the domain and the problem’s constraints.
 * Constraint 1 = {Rows must have unique values}
 * Constraint 2 = {Columns must have unique values}
 * Constraint 3 = {Squares must have unique values}
+* 
 <p align="justify">
 The main objective of this approach is to reduce the search
 space of the problem before we implement recursion and
@@ -56,7 +57,9 @@ cell’s peer list. With this technique it’s also possible to find
 the solution for a cell if there is a single suitable digit after
 removing the duplicate digits, this is called **single possibility**
 or **naked single**, a common Sudoku strategy.
+</p>
 
+<p align="justify">
 The **fourth step** is to implement the **hidden single** strategy
 this is another technique used to further reduce the search space
 before the algorithm commits to recursion and backtracking to
@@ -78,7 +81,9 @@ and checking the puzzle for hidden singles, shown inthe previous figure
 , if any number of cells are solved with these techniques
 the algorithm will repeat them, otherwise the algorithm starts
 utilizing recursion.
-
+ </p>
+ 
+<p align="justify">
 The **fifth step** is where recursion takes place. Here, the
 algorithm will choose a cell with the fewest number of
 possibilities and place the first digit on that list in that cell.
@@ -92,7 +97,6 @@ forcing the algorithm to backtrack and try another digit. After
 multiple iterations of these steps the Sudoku puzzle will finally
 be solved.
 
-  
   </p>
 
 ## Experimental Results and Analyses
