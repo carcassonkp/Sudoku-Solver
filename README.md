@@ -114,7 +114,6 @@ The brute-force approach only solves faster because this Sudoku
 already has a large amount of its cells filled from the get-go,
 so the backtracking algorithm doesn’t have to brute-force test
 that many possibilities.
-  
     </p>
 
 
