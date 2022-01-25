@@ -1,3 +1,4 @@
+# [Sudoku Solver](https://github.com/carcassonkp/Sudoku-Solver/files/7932825/sudokuasCSP.pdf)
 ## Brute-Force Backtracking Approach (Depth First Search)
 
 <p align="justify">
