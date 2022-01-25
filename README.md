@@ -56,8 +56,6 @@ column or square, even if the cell has multiple possible digits
 if a digit is unique in that cell’s peer row, column or square
 then that specific digit must be placed there
 
-![naked singlesand hidden](https://user-images.githubusercontent.com/70576587/150958365-f1996032-709a-44b5-a820-f485a7b91341.png)
-
 <p align="center" width="100%">
-    <img width="30%" src="https://user-images.githubusercontent.com/70576587/150957524-1e97744a-2a5c-4bb4-8ba2-4496407006a7.png"> 
+    <img width="30%" src="https://user-images.githubusercontent.com/70576587/150958365-f1996032-709a-44b5-a820-f485a7b91341.png"> 
 </p>
