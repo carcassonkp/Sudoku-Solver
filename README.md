@@ -95,8 +95,28 @@ already has a large amount of its cells filled from the get-go,
 so the backtracking algorithm doesn’t have to brute-force test
 that many possibilities.
 
-| Table I - Easy  |      BT only     |  CSP with BT |
+| Table I - Easy  |      BT only     |  CSP with BT |   
 |----------|:-------------:|------:|
 | Solve time (ms)  |  1.5 | 3.3 |
 | Recursions  |    166   |   0 |
 | Backtracks  | 120 |    0 |
+
+
+| Table II - Intermediate  |      BT only     |  CSP with BT |   
+|----------|:-------------:|------:|
+| Solve time (ms)  |  430.5 | 272.7 |
+| Recursions  |    49 498   |   186 |
+| Backtracks  |49 558  |    90 |
+
+| Table III - Hard  |      BT only     |  CSP with BT |   
+|----------|:-------------:|------:|
+| Solve time (ms)  |  17 179 | 6 |
+| Recursions  |    1 904 479   |   0 |
+| Backtracks  |1 904 540  |    0 |
+
+From table II and III, it’s possible to observe a huge
+difference in speed, mainly because the Sudoku puzzles have
+less cells filled from the get-go, so the CSP method takes
+advantage of being able to highly reduce the search space,
+while the brute-force has to test out an astonishing number of
+possibilities.
