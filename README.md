@@ -5,8 +5,6 @@ cell; if a digit is already present in that cell’s row, column, or square, it 
 again, this time finding the next empty cell and repeating the process until there are no empty cells, the problem has been solved. If a cell cannot be filled with a number, the algorithm will return to the previous cell and change the digit to another
 valid option, a process known as backtracking.
 
-![Alt Text](https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif)
-
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif" alt="animated" />
 </p>
