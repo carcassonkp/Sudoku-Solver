@@ -1,4 +1,4 @@
-## Brute-Force Backtracking Approach
+## Brute-Force Backtracking Approach (Depth First Search)
 
 <p align="justify">
 In this approach the first step is to find an empty Sudoku cell and fill it with a digit from one to nine. The algorithm verifies which digits are safe to use whenever it finds an empty
