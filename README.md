@@ -30,12 +30,12 @@ include the variables, the domain and the problem’s constraints.
 <p align="justify">
 The main objective of this approach is to reduce the search
 space of the problem before we implement recursion and
-backtracking. **The first step** is to attribute to each cell in
+backtracking. The first step is to attribute to each cell in
 the Sudoku a list of its peers, a cell’s peers are the cells
 present in the corresponding row, column and square. This will
 greatly improve the search time when the algorithm needs to
-check if a digit is already present on that cell’s peers. **The
-second step** consists in filling every single empty cell with all
+check if a digit is already present on that cell’s peers. The
+second step consists in filling every single empty cell with all
 the digits in the domain, which are digits from one to nine,
 shown in the next figure.
 </p>
@@ -48,18 +48,18 @@ shown in the next figure.
 <p align="justify">
 The elements inside the list of every cell can be removed
 if any of those digits are already present in that cell’s peers,
-this is **the third step**. It will improve the algorithms speed
+this is the third step. It will improve the algorithms speed
 considering that this reduces the amount of digits that it needs
 to test. In the simple backtracking approach every digit from
 the domain is tested even though it might not be unique in that
 cell’s peer list. With this technique it’s also possible to find
 the solution for a cell if there is a single suitable digit after
-removing the duplicate digits, this is called **single possibility**
-or **naked single**, a common Sudoku strategy.
+removing the duplicate digits, this is called single possibility
+or naked single, a common Sudoku strategy.
   </p>
 
 <p align="justify">
-The **fourth step** is to implement the **hidden single** strategy
+The fourth step is to implement the hidden single strategy
 this is another technique used to further reduce the search space
 before the algorithm commits to recursion and backtracking to
 solve the rest of the puzzle. The term ”hidden single” refers to
@@ -83,10 +83,10 @@ utilizing recursion.
  </p>
  
 <p align="justify">
-The **fifth step** is where recursion takes place. Here, the
+The fifth step is where recursion takes place. Here, the
 algorithm will choose a cell with the fewest number of
 possibilities and place the first digit on that list in that cell.
-This heuristic is called minimum remaining values (**MRV**) and
+This heuristic is called minimum remaining values (MRV) and
 it was chosen because it helps in discovering inconsistencies
 earlier. Then the algorithm will repeat the third and fourth
 step until it either finishes solving the Sudoku or until a cell
