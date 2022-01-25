@@ -54,8 +54,27 @@ solve the rest of the puzzle. The term ”hidden single” refers to
 a single candidate cell remaining for a specific digit in a row,
 column or square, even if the cell has multiple possible digits
 if a digit is unique in that cell’s peer row, column or square
-then that specific digit must be placed there
+then that specific digit must be placed there.
 
 <p align="center" width="100%">
     <img width="30%" src="https://user-images.githubusercontent.com/70576587/150958365-f1996032-709a-44b5-a820-f485a7b91341.png"> 
 </p>
+
+After eliminating duplicate values from the possible digits
+and checking the puzzle for hidden singles, shown inthe previous figure
+, if any number of cells are solved with these techniques
+the algorithm will repeat them, otherwise the algorithm starts
+utilizing recursion.
+
+The **fifth step** is where recursion takes place. Here, the
+algorithm will choose a cell with the fewest number of
+possibilities and place the first digit on that list in that cell.
+This heuristic is called minimum remaining values (**MRV**) and
+it was chosen because it helps in discovering inconsistencies
+earlier. Then the algorithm will repeat the third and fourth
+step until it either finishes solving the Sudoku or until a cell
+is left with no possible digits, this means that the digit we
+chose for the cell, with the fewest possibilities, was incorrect
+forcing the algorithm to backtrack and try another digit. After
+multiple iterations of these steps the Sudoku puzzle will finally
+be solved.
