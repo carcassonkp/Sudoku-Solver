@@ -14,17 +14,19 @@ valid option, a process known as backtracking.
 </p>
 
 ## CSP Approach with Backtracking (MRV)
-
+<p align="justify">
 When approaching Sudoku solving as a CSP it’s required to
 define and identify the problem’s components. The components
 include the variables, the domain and the problem’s constraints.
+</p>
+
 
 * Variables = {Cell1 . . . Cell81}. 
 * Domain = {1, 2, 3, 4, 5, 6, 7, 8, 9
 * Constraint 1 = {Rows must have unique values}
 * Constraint 2 = {Columns must have unique values}
 * Constraint 3 = {Squares must have unique values}
-
+<p align="justify">
 The main objective of this approach is to reduce the search
 space of the problem before we implement recursion and
 backtracking. **The first step** is to attribute to each cell in
@@ -35,11 +37,15 @@ check if a digit is already present on that cell’s peers. **The
 second step** consists in filling every single empty cell with all
 the digits in the domain, which are digits from one to nine,
 shown in the next figure.
+</p>
+
 
 <p align="center" width="100%">
     <img width="30%" src="https://user-images.githubusercontent.com/70576587/150957524-1e97744a-2a5c-4bb4-8ba2-4496407006a7.png"> 
 </p>
 
+<p align="justify">
+  
 The elements inside the list of every cell can be removed
 if any of those digits are already present in that cell’s peers,
 this is **the third step**. It will improve the algorithms speed
@@ -59,12 +65,15 @@ a single candidate cell remaining for a specific digit in a row,
 column or square, even if the cell has multiple possible digits
 if a digit is unique in that cell’s peer row, column or square
 then that specific digit must be placed there.
+</p>
+
 
 <p align="center" width="100%">
     <img width="30%" src="https://user-images.githubusercontent.com/70576587/150958365-f1996032-709a-44b5-a820-f485a7b91341.png"> 
 </p>
 
-After eliminating duplicate values from the possible digits
+<p align="justify">
+  After eliminating duplicate values from the possible digits
 and checking the puzzle for hidden singles, shown inthe previous figure
 , if any number of cells are solved with these techniques
 the algorithm will repeat them, otherwise the algorithm starts
@@ -83,8 +92,11 @@ forcing the algorithm to backtrack and try another digit. After
 multiple iterations of these steps the Sudoku puzzle will finally
 be solved.
 
-## Experimental Results and Analyses
+  
+  </p>
 
+## Experimental Results and Analyses
+<p align="justify">
 In order to measure the efficiency of the algorithms, during
 the solving of each puzzle, it was taken into account the solving
 time, the number of recursions and backtracks that were needed
@@ -98,6 +110,9 @@ The brute-force approach only solves faster because this Sudoku
 already has a large amount of its cells filled from the get-go,
 so the backtracking algorithm doesn’t have to brute-force test
 that many possibilities.
+  
+    </p>
+
 
 | Table I - Easy  |      BT only     |  CSP with BT |   
 |----------|:-------------:|------:|
@@ -117,10 +132,11 @@ that many possibilities.
 | Solve time (ms)  |  17 179 | 6 |
 | Recursions  |    1 904 479   |   0 |
 | Backtracks  |1 904 540  |    0 |
-
+<p align="justify">
 From table II and III, it’s possible to observe a huge
 difference in speed, mainly because the Sudoku puzzles have
 less cells filled from the get-go, so the CSP method takes
 advantage of being able to highly reduce the search space,
 while the brute-force has to test out an astonishing number of
 possibilities.
+</p>
