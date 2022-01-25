@@ -33,5 +33,5 @@ the digits in the domain, which are digits from one to nine,
 shown in the next figure.
 
 <p align="center" width="100%">
-    <img width="50%" src="https://user-images.githubusercontent.com/70576587/150957524-1e97744a-2a5c-4bb4-8ba2-4496407006a7.png"> 
+    <img width="30%" src="https://user-images.githubusercontent.com/70576587/150957524-1e97744a-2a5c-4bb4-8ba2-4496407006a7.png"> 
 </p>
