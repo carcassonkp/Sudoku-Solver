@@ -23,12 +23,12 @@ include the variables, the domain and the problem’s constraints.
 
 The main objective of this approach is to reduce the search
 space of the problem before we implement recursion and
-backtracking. The first step is to attribute to each cell in
+backtracking. **The first step** is to attribute to each cell in
 the Sudoku a list of its peers, a cell’s peers are the cells
 present in the corresponding row, column and square. This will
 greatly improve the search time when the algorithm needs to
-check if a digit is already present on that cell’s peers. The
-second step consists in filling every single empty cell with all
+check if a digit is already present on that cell’s peers. **The
+second step** consists in filling every single empty cell with all
 the digits in the domain, which are digits from one to nine,
 shown in the next figure.
 
