@@ -8,3 +8,9 @@ valid option, a process known as backtracking.
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif" alt="animated" />
 </p>
+
+## CSP Approach with backtracking
+
+When approaching Sudoku solving as a CSP it’s required to
+define and identify the problem’s components. The components
+include the variables, the domain and the problem’s constraints.
