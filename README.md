@@ -78,3 +78,25 @@ chose for the cell, with the fewest possibilities, was incorrect
 forcing the algorithm to backtrack and try another digit. After
 multiple iterations of these steps the Sudoku puzzle will finally
 be solved.
+
+## Experimental Results and Analyses
+
+In order to measure the efficiency of the algorithms, during
+the solving of each puzzle, it was taken into account the solving
+time, the number of recursions and backtracks that were needed
+to reach the final solution.
+In table I it’s possible to see that the backtracking-only
+method was actually faster than the CSP. This was because the
+CSP algorithm spends more time trying to reduce the search
+space, like creating each variable’s peer list. Meanwhile the
+backtrack brute-force approach can just start solving the puzzle.
+The brute-force approach only solves faster because this Sudoku
+already has a large amount of its cells filled from the get-go,
+so the backtracking algorithm doesn’t have to brute-force test
+that many possibilities.
+
+| Table I - Easy  |      BT only     |  CSP with BT |
+|----------|:-------------:|------:|
+| Solve time (ms)  |  1.5 | 3.3 |
+| Recursions  |    166   |   0 |
+| Backtracks  | 120 |    0 |
