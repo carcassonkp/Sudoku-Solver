@@ -35,3 +35,14 @@ shown in the next figure.
 <p align="center" width="100%">
     <img width="30%" src="https://user-images.githubusercontent.com/70576587/150957524-1e97744a-2a5c-4bb4-8ba2-4496407006a7.png"> 
 </p>
+
+The elements inside the list of every cell can be removed
+if any of those digits are already present in that cell’s peers,
+this is **the third step**. It will improve the algorithms speed
+considering that this reduces the amount of digits that it needs
+to test. In the simple backtracking approach every digit from
+the domain is tested even though it might not be unique in that
+cell’s peer list. With this technique it’s also possible to find
+the solution for a cell if there is a single suitable digit after
+removing the duplicate digits, this is called **single possibility**
+or **naked single**, a common Sudoku strategy.
