@@ -14,3 +14,9 @@ valid option, a process known as backtracking.
 When approaching Sudoku solving as a CSP it’s required to
 define and identify the problem’s components. The components
 include the variables, the domain and the problem’s constraints.
+
+* Variables = {Cell1 . . . Cell81}. 
+* Domain = {1, 2, 3, 4, 5, 6, 7, 8, 9
+* Constraint 1 = {Rows must have unique values}
+* Constraint 2 = {Columns must have unique values}
+* Constraint 3 = {Squares must have unique values}
