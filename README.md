@@ -26,7 +26,7 @@ include the variables, the domain and the problem’s constraints.
 * Constraint 1 = {Rows must have unique values}
 * Constraint 2 = {Columns must have unique values}
 * Constraint 3 = {Squares must have unique values}
-* 
+
 <p align="justify">
 The main objective of this approach is to reduce the search
 space of the problem before we implement recursion and
