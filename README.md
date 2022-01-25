@@ -46,7 +46,6 @@ shown in the next figure.
 </p>
 
 <p align="justify">
-  
 The elements inside the list of every cell can be removed
 if any of those digits are already present in that cell’s peers,
 this is **the third step**. It will improve the algorithms speed
@@ -57,7 +56,7 @@ cell’s peer list. With this technique it’s also possible to find
 the solution for a cell if there is a single suitable digit after
 removing the duplicate digits, this is called **single possibility**
 or **naked single**, a common Sudoku strategy.
-</p>
+  </p>
 
 <p align="justify">
 The **fourth step** is to implement the **hidden single** strategy
